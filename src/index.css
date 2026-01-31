@@ -147,6 +147,53 @@ textarea:focus {
   }
 }
 
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 1rem;
+  }
+
+  /* Navbar Responsiveness */
+  nav {
+    padding: 0.75rem 1rem !important;
+    gap: 1rem;
+  }
+
+  nav>div {
+    gap: 1rem !important;
+  }
+
+  .user-info-text {
+    display: none;
+  }
+
+  /* Dashboard Header */
+  header {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 1rem !important;
+  }
+
+  header div {
+    width: 100%;
+  }
+
+  header button {
+    width: 100%;
+  }
+
+  /* Summary Cards */
+  section[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+
+  /* Modals */
+  .glass-card[style*="max-width: 450px"] {
+    width: 95% !important;
+    padding: 1.5rem !important;
+  }
+}
+
 @media print {
   .no-print {
     display: none !important;

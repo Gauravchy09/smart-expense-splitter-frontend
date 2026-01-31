@@ -81,7 +81,7 @@ const Navbar = ({ user, onLogout }) => {
                             }}>
                                 {user.username[0].toUpperCase()}
                             </div>
-                            <span style={{ color: 'var(--text-primary)', fontWeight: '500' }}>{user.username}</span>
+                            <span className="user-info-text" style={{ color: 'var(--text-primary)', fontWeight: '500' }}>{user.username}</span>
                         </div>
                         <button
                             onClick={handleLogout}
